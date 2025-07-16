@@ -1,0 +1,37 @@
+main {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.card {
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+}
+
+.card h4 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.toast-container {
+  z-index: 1055;
+}
+
+.hover-dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.dropdown-menu-end {
+  right: 0;
+  left: auto;
+}
