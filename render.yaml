@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: spring-boot-backend
+    env: java
+    buildCommand: ./mvnw clean package
+    startCommand: java -jar target/your-app.jar
+    repo: https://github.com/your-username/your-repo
+    rootDir: backend
+
+  - type: static
+    name: react-frontend
+    buildCommand: npm run build
+    staticPublishPath: build
+    repo: https://github.com/your-username/your-repo
+    rootDir: frontend
