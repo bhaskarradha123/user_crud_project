@@ -1,17 +1,18 @@
 services:
   - type: web
     name: user-crud-backend
-    env: java
-    buildCommand: ./mvnw clean package
-    startCommand: java -jar target/user_crud-0.0.1-SNAPSHOT.jar
-    repo: https://github.com/bhaskarradha123/user_crud_project
+    runtime: java
+    repo: https://github.com/your-username/your-repo-name
     rootDir: backend/user_crud
     plan: free
+    buildCommand: ./mvnw clean package
+    startCommand: java -jar target/user_crud-0.0.1-SNAPSHOT.jar
 
   - type: web
     name: user-crud-frontend
-    buildCommand: npm install && npm run build
-    staticPublishPath: dist
-    repo: https://github.com/bhaskarradha123/user_crud_project
+    runtime: node
+    repo: https://github.com/your-username/your-repo-name
     rootDir: fontend/user_crud_frontend
     plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npx serve -s dist
