@@ -1,7 +1,7 @@
 services:
   - type: web
     name: user-crud-backend
-    env: docker
+    runtime: docker
     repo: https://github.com/bhaskarradha123/user_crud_project
     rootDir: backend/user_crud
     dockerfilePath: Dockerfile
