@@ -2,7 +2,7 @@ services:
   - type: web
     name: user-crud-backend
     runtime: java
-    repo: https://github.com/your-username/your-repo-name
+    repo: https://github.com/bhaskarradha123/user_crud_project
     rootDir: backend/user_crud
     plan: free
     buildCommand: ./mvnw clean package
@@ -11,7 +11,7 @@ services:
   - type: web
     name: user-crud-frontend
     runtime: node
-    repo: https://github.com/your-username/your-repo-name
+    repo: https://github.com/bhaskarradha123/user_crud_project
     rootDir: fontend/user_crud_frontend
     plan: free
     buildCommand: npm install && npm run build
