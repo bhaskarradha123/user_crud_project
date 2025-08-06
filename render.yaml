@@ -15,4 +15,3 @@ services:
     plan: free
     buildCommand: npm install && npm run build
     startCommand: npx serve -s dist
-    staticPublishPath: dist
