@@ -53,7 +53,7 @@ public class CustomOAuth2SuccessHandler implements AuthenticationSuccessHandler 
 
         String token = jwtUtil.generateTokenFromEmail(email);
 
-        response.sendRedirect("http://localhost:5173/oauth-success?token=" + token);
+        response.sendRedirect("https://user-crud-frontend-53a3.onrender.com/oauth-success?token=" + token);
     }
 
 }
