@@ -42,7 +42,7 @@ export default function OAuthSuccess() {
 
     console.log(" Decoded JWT payload:", payload);
 
-    fetch("http://localhost:8080/user/profile", {
+    fetch("https://user-crud-backend-53a3.onrender.com/user/profile", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
