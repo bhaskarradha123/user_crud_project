@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8080',
+  baseURL: 'https://user-crud-backend-53a3.onrender.com',
 });
 
 // Add JWT interceptor
