@@ -41,7 +41,7 @@ export default function LoginForm() {
   };
 
   const handleOAuth = (provider) => {
-window.location.href = 'https://user-crud-backend-53a3.onrender.com/oauth2/authorization/google';
+window.location.href = 'https://user-crud-backend-53a3.onrender.com/oauth2/authorization/{provider}';
   };
 
   return (
