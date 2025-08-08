@@ -30,7 +30,7 @@ export default function RegisterForm() {
   };
 
   const handleOAuth = (provider) => {
-    window.location.href = `http://localhost:8080/oauth2/authorization/${provider}`;
+    window.location.href = `https://user-crud-backend-53a3.onrender.com/oauth2/authorization/${provider}`;
   };
 
   return (
